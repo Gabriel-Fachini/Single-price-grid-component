@@ -7,6 +7,7 @@ body{
     justify-content: center;
     align-items: center;
     font-size: 16px;
+    overflow: hidden;
 }
 
 main {
@@ -137,4 +138,39 @@ main {
     margin-bottom: 3px;
     font-size: 14px;
     color: hsl(204, 43%, 93%);
+}
+
+@media only screen and (max-width: 990px){
+    main{
+        width: 60%;
+        height: 70%;
+    }
+}
+
+@media only screen and (max-width: 620px){
+    body{
+        overflow: visible;
+        height: 120vh;
+    }
+
+    main{
+        width: 80%;
+        height: 95%;
+        display: block;
+        overflow: hidden;
+    }
+
+    .first-section{
+    }
+
+    .second-section{
+        width: 100%;
+        height: 30%;
+    }
+
+    .third-section{
+        width: 100%;
+        height: 30%;
+        overflow: hidden;
+    }
 }
